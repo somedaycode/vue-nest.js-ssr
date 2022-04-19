@@ -6,5 +6,7 @@
   "repository": "https://github.com/somedaycode/vue-nest.js-ssr.git",
   "author": "Seonkyu Kim <somedaycode@gmail.com>",
   "license": "MIT",
-  "workspaces": ["backend", "client"]
+  "workspaces": {
+    "packages": ["packages/vue/*"]
+  }
 }
