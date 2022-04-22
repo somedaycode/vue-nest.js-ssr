@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2>Todolist SSR</h2>
+  <main>
+    <h1>Todolist SSR</h1>
     <ul>
       <todo-item
         v-for="todo in this.todoData"
@@ -10,7 +10,7 @@
     </ul>
 <!--    <input type="text" placeholder="할일을 입력" />-->
 <!--    <button>추가하기</button>-->
-  </section>
+  </main>
 </template>
 
 <script lang="ts">

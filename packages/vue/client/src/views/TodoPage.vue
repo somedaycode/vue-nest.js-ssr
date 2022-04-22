@@ -1,8 +1,5 @@
 <template>
-  <main class="home">
-    <h1>여기는 홈</h1>
     <TodoList/>
-  </main>
 </template>
 
 <script lang="ts">
@@ -14,5 +11,5 @@ import TodoList from '@/components/TodoList.vue';
     TodoList,
   },
 })
-export default class Home extends Vue {}
+export default class TodoPage extends Vue {}
 </script>

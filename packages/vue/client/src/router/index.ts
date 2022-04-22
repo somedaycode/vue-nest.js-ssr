@@ -1,27 +1,28 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
+import TodoPage from '@/views/TodoPage.vue';
+import About from '@/views/About.vue';
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: "/",
-    name: "Home",
-    component: Home,
+    path: '/',
+    name: 'About',
+    component: About,
   },
   {
-    path: "/about",
-    name: "About",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: '/todo',
+    name: 'TodoPage',
+    component: TodoPage,
   },
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
-});
+const createRouter = () =>
+  new VueRouter({
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes,
+  });
 
-export default router;
+export default createRouter;
